@@ -22,13 +22,13 @@ database="social_butterfly"
 collection="flutters"
 
 # 8. filter
-# filter='{}'
- filter='{
-   "body": {
-     "$regex": "dad-a-base", 
-     "$options": "i"
-   } 
- }'
+filter='{}'
+# filter='{
+#   "body": {
+#     "$regex": "dad-a-base", 
+#     "$options": "i"
+#   } 
+# }'
 
 # 9. Run the curl request from the terminal: ./findOne.sh
 curl -XPOST -H "api-key: $apikey" -H 'Access-Control-Request-Headers: *' -H 'Content-type: application/json' -d '{ 
